@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
   schedule:
-    - cron: 10 16 * * *
+    - cron: 0 0 * * *
 
 jobs:
   run:
@@ -17,5 +17,5 @@ jobs:
       - run: npm ci
       - run: npm run main
         env:
-          GLADOS: ${{ secrets.GLADOS }}
+          GLADOS: 9hRcIzvBShHO+i2vaTuTypNrl0q/bzLn6F7uj/0vmkKCJcd/9T4NnMAOqHxs1TyRVJeDXYmRE0deZWS/jEJ9V2uVEaC4LItOaCfKKNcV8MjAUzxL4cXRsT5rX1B3
           NOTIFY: ${{ secrets.NOTIFY }}
